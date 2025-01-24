@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarseerAssignment.Web", "CarseerAssignment.Web\CarseerAssignment.Web.csproj", "{6B1CA259-F892-498B-8A2A-DC94DF8746C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarseerAssignment.Application", "CarseerAssignment.Application\CarseerAssignment.Application.csproj", "{6CED3DE3-69EE-45A9-A330-D2F9A638A37E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6B1CA259-F892-498B-8A2A-DC94DF8746C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B1CA259-F892-498B-8A2A-DC94DF8746C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B1CA259-F892-498B-8A2A-DC94DF8746C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CED3DE3-69EE-45A9-A330-D2F9A638A37E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CED3DE3-69EE-45A9-A330-D2F9A638A37E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CED3DE3-69EE-45A9-A330-D2F9A638A37E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CED3DE3-69EE-45A9-A330-D2F9A638A37E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
