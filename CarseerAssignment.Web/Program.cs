@@ -1,4 +1,5 @@
 using CarseerAssignment.Application.Interfaces;
+using CarseerAssignment.Application.Services;
 using CarseerAssignment.Infrastructure.Services;
 using Microsoft.Extensions.Options;
 
@@ -15,6 +16,8 @@ builder.Services.AddHttpClient<IVehicleApiService, VehicleApiService>((servicePr
     var apiSettings = serviceProvider.GetRequiredService<IOptions<CarseerAssignment.Infrastructure.Helpers.ApiSettings>>().Value;
     client.BaseAddress = new Uri(apiSettings.BaseUrl);
 });
+
+builder.Services.AddScoped<ICarService, CarService>();
 
 var app = builder.Build();
 
