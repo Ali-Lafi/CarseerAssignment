@@ -17,9 +17,9 @@ public class CarService : ICarService
         return await _vehicleApiService.GetAllMakesAsync();
     }
 
-    public async Task<List<VehicleModelDTO>> GetModelsForMakeYearAsync(int makeId, int year, string vehicleType)
+    public async Task<List<VehicleModelDTO>> GetModelsForMakeYearAsync(int makeId, int year)
     {
-        return await _vehicleApiService.GetModelsForMakeYearAsync(makeId, year, vehicleType);
+        return await _vehicleApiService.GetModelsForMakeYearAsync(makeId, year);
     }
 
     public async Task<List<VehicleTypeDTO>> GetVehicleTypesForMakeIdAsync(int makeId)

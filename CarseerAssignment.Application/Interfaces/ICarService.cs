@@ -6,5 +6,5 @@ public interface ICarService
 {
     Task<List<CarMakeDTO>> GetAllMakesAsync();
     Task<List<VehicleTypeDTO>> GetVehicleTypesForMakeIdAsync(int makeId);
-    Task<List<VehicleModelDTO>> GetModelsForMakeYearAsync(int makeId, int year, string vehicleType);
+    Task<List<VehicleModelDTO>> GetModelsForMakeYearAsync(int makeId, int year);
 }

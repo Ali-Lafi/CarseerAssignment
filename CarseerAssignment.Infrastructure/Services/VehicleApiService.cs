@@ -21,7 +21,7 @@ public class VehicleApiService : IVehicleApiService
         return result.Results;
     }
 
-    public async Task<List<VehicleModelDTO>> GetModelsForMakeYearAsync(int makeId, int year, string vehicleType)
+    public async Task<List<VehicleModelDTO>> GetModelsForMakeYearAsync(int makeId, int year)
     {
         var response = await _httpClient.GetStringAsync($"GetModelsForMakeIdYear/makeId/{makeId}/modelyear/{year}?format=json");
         var result = JsonConvert.DeserializeObject<ApiResponse<VehicleModelDTO>>(response);
